@@ -16,11 +16,12 @@ public class Board : MonoBehaviour {
 		{
 			for(int x=0;x<GridWidth;x++)
 			{
-				GameObject g = Instantiate (gemPrefab,new Vector3(x,y,0),Quaternion.identity)as GameObject;
+				GameObject g = Instantiate (gemPrefab, new Vector3(x,y,0),Quaternion.identity)as GameObject;
 				g.transform.parent = gameObject.transform;
 				gems.Add(g.GetComponent<Gem>());
 			}
 		}
+		gameObject.transform.position = new Vector3(-2.45f, 7f, 0f);
 	}
 	
 	// Update is called once per frame
