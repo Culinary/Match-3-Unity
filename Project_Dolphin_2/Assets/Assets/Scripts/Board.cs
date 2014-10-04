@@ -8,6 +8,8 @@ public class Board : MonoBehaviour {
 	public GameObject gemPrefab;
 	public int GridWidth;
 	public int GridHeight;
+	// 
+	public string array = {"Blue Gem", "Green Gem", "Purple Gem", "Red Gem", "Yellow Gem"};
 
 	// Use this for initialization
 	void Start () {
@@ -28,4 +30,5 @@ public class Board : MonoBehaviour {
 	void Update () {
 	
 	}
+
 }
